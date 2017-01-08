@@ -6,6 +6,13 @@
 	<meta name="description" content="The quickest way to find out if there is a plan for brexit yet">
   	<meta name="keywords" content="brexit, politics, europe, eu, remain, leave, leave.eu, rema.in">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<meta property="og:url" content="http://isthereabrexitplanyet.uk" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Is There A Brexit Plan Yet?" />
+	<meta property="og:description" content="The quickest way to find out if there is a plan for brexit yet" />
+	<meta property="og:image" content="http://isthereabrexitplanyet.uk/fb-img.png" />
+
 	<style>
 		body {
 			background-color: #000;
@@ -20,11 +27,12 @@
 		}
 		.centre-holder {
 			color: #fff;
-			font-size: 150px;
+			font-size: 100px;
 			position: absolute;
 			left: 50%;
-			top: 20%;
+			top: 15%;
 			text-align: center;
+			width: 100%;
 			-webkit-transform: translate(-50%, -50%);
 			-moz-transform: translate(-50%, -50%);
 			-ms-transform: translate(-50%, -50%);
@@ -65,7 +73,13 @@
 			}
 
 			.centre-holder {
-				top: 25%;
+				top: 20%;
+			}
+		}
+		@media only screen and (min-width: 414px) {
+			.centre-holder {
+				font-size: 130px;
+				width: 70%;
 			}
 		}
 		@media only screen and (min-width: 768px) {

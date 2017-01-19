@@ -96,11 +96,8 @@
 
 		}
 	</style>
-	<script>
-		
-	</script>
 </head>
-<body>
+<body onload="loadAGiggle()">
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -117,7 +114,7 @@
 		<div class="main">
 			NO
 		</div>
-		<div class="sub">
+		<div class="sub" id="giggle-box">
 			Brexit supporters are too busy depreciating the pound
 		</div>
 	</div>
@@ -144,7 +141,19 @@
 	</div>
 
 	<script>
-		console.log("if you are viewing this well done, you possess the ability to fire up the dev tools, if you support brexit, you more than likely are the tool :)");
+		var giggles = [
+			'Brexit supporters are too busy depreciating the pound',
+			'May is too busy buying tartan suits',
+			'Everyones too busy watching our borders',
+			'The yorkshire bloke is still trying to fix it'
+		]
+
+		function loadAGiggle() {
+			//
+			var rand = Math.floor(Math.random() * giggles.length);
+			document.getElementById('giggle-box').innerHTML = giggles[rand];
+			console.log("if you are viewing this well done, you possess the ability to fire up the dev tools, if you support brexit, you more than likely are the tool :)");
+		}
 	</script>
 </body>
 </html>
